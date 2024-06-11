@@ -27,6 +27,7 @@ export function InfiniteScrollList<T>(props: IInfiniteScrollListProps<T>) {
 
   function fetchMore() {
     if (!loading && hasMore) {
+      console.log('hasMore', hasMore)
       loadMore();
     }
   }
